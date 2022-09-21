@@ -13,7 +13,22 @@ Working Illustration
 
 ## What Learnt
 
-In coding this lesson, I was able to undrstand the implementation of ggrid template areas, as this is used in arange the items of the calculator.
+1. Grid Template area
+   In coding this lesson, I was able to undrstand the implementation of grid template areas, as this is used in arange the items of the calculator.
+
+2. Regex
+   In this lesson, I have discovered a powerful new feature, Regex.
+
+   ```js
+   const regex = /(^[*/=])|(\s)/g;
+   equation.replace(regex, '');
+   ```
+
+3. The eval() method. I never realized that this existed in javascript, until coding this project. This particularly is a big eye-opener.
+
+   ```js
+   return (currentValueElem.value = eval(equation));
+   ```
 
 ## Language stack used for development
 

@@ -89,4 +89,4 @@ Thanks to Dave Gray for an impressive follow through.
 
 ## Valuable Resources
 
-<!-- TODO: Add link to project: Dave Gray -->
+How to Build a Calculator with Vanilla Javascript | Dave Gray [Link here](https://www.youtube.com/watch?v=XyVIi6BipR8)

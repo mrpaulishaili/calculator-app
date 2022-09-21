@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TODO: Add FontAwesome Link -->
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./public/css/reset.css" />
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./public/css/style.min.css" />
+
+    <!-- Site Page Title -->
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Calculator Header -->
+      <header class="header">
+        <h1>Calculator</h1>
+      </header>
+
+      <!-- Calculator display -->
+      <section class="display">
+        <div class="previousvalue"></div>
+        <input type="text" class="currentvalue" value="0" readonly />
+      </section>
+
+      <!-- Calculator buttons -->
+      <button class="clearEntry function">CE</button>
+      <button class="clear function">C</button>
+      <button class="delete function">
+        <i class="fas fa-backspace"></i>
+      </button>
+      <button class="operator divide function">/</button>
+
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="operator function">*</button>
+
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operator function">-</button>
+
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="operator function">+</button>
+
+      <button class="signChange">+/-</button>
+      <button class="number">0</button>
+      <button class="number">.</button>
+      <button class="equals">=</button>
+    </main>
+  </body>
+</html>

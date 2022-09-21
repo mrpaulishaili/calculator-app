@@ -33,6 +33,27 @@ body {
     'display display display display';
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: 20px minmax(120px, auto) repeat(5, minmax(0, 70px));
+  scale: 0.6;
+  transition: 0.5s scale, opacity ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 1px 3px 9px rgba(135, 147, 39, 0.1);
+
+  > * {
+    transition: 0.2s opacity ease-in-out;
+    transition-delay: 0.3s;
+    opacity: 0.3;
+  }
+
+  &.on {
+    scale: 1;
+    opacity: 1;
+
+    > * {
+      opacity: 1;
+    }
+  }
 
   &:focus-within {
     background-color: rgba(225, 225, 225, 0.5);
@@ -48,7 +69,8 @@ body {
   h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.85rem;
-    font-weight: normal;
+    padding-top: 0.5rem;
+    font-weight: 300;
   }
 }
 
@@ -88,7 +110,10 @@ button {
 
   &:hover,
   &:active {
+    transition: 0.2s background-color ease-in-out;
+
     background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
   }
 }
 
@@ -117,6 +142,6 @@ button {
     font-size: 20px;
   }
   .container {
-    grid-template-rows: 35px minmax(92px, auto) repeat(5, minmax(0, 92px));
+    grid-template-rows: 25px minmax(85px, auto) repeat(5, minmax(0, 85px));
   }
 }

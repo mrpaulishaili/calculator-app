@@ -1,9 +1,12 @@
+import { nFormatter } from './numberFormatter.js';
+
 const initApp = () => {
   /*  
         Query select DOM elements
 
   */
-  const currentValueElem = document.querySelector('.currentvalue'),
+  const container = document.querySelector('.container'),
+    currentValueElem = document.querySelector('.currentvalue'),
     previousValueElem = document.querySelector('.previousvalue'),
     inputButtons = document.querySelectorAll('.number'),
     clearButtons = document.querySelectorAll('.clear, .clearEntry'),
@@ -184,7 +187,13 @@ const initApp = () => {
     itemArray = [];
 
     console.log(equationArray);
+
+    nFormatter.format(currentValueElem.value);
   });
+
+  setTimeout(() => {
+    container.classList.add('on');
+  }, 100);
 };
 
 document.addEventListener('DOMContentLoaded', initApp);

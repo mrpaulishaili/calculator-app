@@ -65,11 +65,19 @@ Working Illustration
 
 ## Future expectation and functionalities
 
-- To allow the esc key to clear all items
+[] To allow the esc key to clear all items
 
-- To recieve inout & command from computer keyboard
+[x] Slow transition effet DOMContentLoaded.
 
-- Implement welcome / splash screen and close app feature.
+[] To recieve inout & command from computer keyboard
+
+[] Implement welcome / splash screen and close app feature.
+
+[] Add comma number formatter to number values on display
+
+[x] Add box-shadow to give reality feel
+
+[] Microinteraction to indicate button is pressed.
 
 ## Links
 

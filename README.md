@@ -67,7 +67,7 @@ Working Illustration
 
 [ ] To allow the esc key to clear all items
 
-[x] Slow transition effet DOMContentLoaded.
+[X] Slow transition effet DOMContentLoaded.
 
 [ ] To recieve inout & command from computer keyboard
 
@@ -75,7 +75,7 @@ Working Illustration
 
 [] Add comma number formatter to number values on display
 
-[x] Add box-shadow to give reality feel
+[X] Add box-shadow to give reality feel
 
 [ ] Microinteraction to indicate button is pressed.
 

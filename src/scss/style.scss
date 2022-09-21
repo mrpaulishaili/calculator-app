@@ -33,7 +33,7 @@ body {
     'header header header header'
     'display display display display';
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-template-rows: 20px minmax(120px, auto) repeat(5, minmax(0, 70px));
+  grid-template-rows: 35px minmax(120px, auto) repeat(5, minmax(0, 70px));
   scale: 0.6;
   transition: 0.5s scale, opacity ease-in-out;
   opacity: 0;
@@ -65,13 +65,13 @@ body {
   grid-area: header;
   padding: 0.5rem 0.5rem;
   display: flex;
+  height: 100%;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 
   h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.85rem;
-    padding-top: 0.5rem;
     font-weight: 100;
   }
 }
@@ -144,6 +144,6 @@ button {
     font-size: 20px;
   }
   .container {
-    grid-template-rows: 25px minmax(85px, auto) repeat(5, minmax(0, 85px));
+    grid-template-rows: 35px minmax(90px, auto) repeat(5, minmax(0, 80px));
   }
 }

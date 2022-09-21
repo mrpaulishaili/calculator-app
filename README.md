@@ -2,21 +2,24 @@
 
 ## Screenshots
 
-Desktop Demo
+### Desktop Demo
+
 ![Desktop Demo](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/desktop-view.jpg)
 
-Mobile Demo
+### Mobile Demo
+
 ![Mobile Demo](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/mobile-view.jpg)
 
-Working Illustration
+### Working Illustration
+
 ![Working Illustration](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/illustration-calculator.gif)
 
-## What Learnt
+## What I Learnt?
 
-1. Grid Template area
+1. **Grid Template area:**
    In coding this lesson, I was able to undrstand the implementation of grid template areas, as this is used in arange the items of the calculator.
 
-2. Regex
+2. **Regex:**
    In this lesson, I have discovered a powerful new feature, Regex.
 
    ```js
@@ -24,7 +27,7 @@ Working Illustration
    equation.replace(regex, '');
    ```
 
-3. The eval() method. I never realized that this existed in javascript, until coding this project. This particularly is a big eye-opener.
+3. **The eval() method:** I never realized that this existed in javascript, until coding this project. This particularly is a big eye-opener.
 
    ```js
    return (currentValueElem.value = eval(equation));
@@ -66,20 +69,19 @@ Working Illustration
 ## Future expectation and functionalities
 
 [ ] To allow the esc key to clear all items
-
-[X] Slow transition effet DOMContentLoaded.
-
+[x] Slow transition effet DOMContentLoaded.
 [ ] To recieve inout & command from computer keyboard
-
 [ ] Implement welcome / splash screen and close app feature.
-
-[] Add comma number formatter to number values on display
-
-[X] Add box-shadow to give reality feel
-
+[ ] Add comma number formatter to number values on display
+[x] Add box-shadow to give reality feel
 [ ] Microinteraction to indicate button is pressed.
 
 ## Links
 
-Codebase: [GitHub](htps://github.com/)
-Live: [GitHub Pages](htps://github.com/)
+Codebase Repo: [GitHub](https://github.com/mrpaulishaili/calculator-app)
+
+Live URL: [GitHub Pages](https://mrpaulishaili.github.io/calculator-app/dist/)
+
+## Valuable Resources
+
+<!-- TODO: Add link to project: Dave Gray -->

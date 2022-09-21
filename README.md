@@ -12,7 +12,7 @@
 
 ### Working Illustration
 
-![Working Illustration](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/illustration-calculator.gif)
+![Working Illustration](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/illustration-calculator-app.gif)
 
 ## What I Learnt?
 
@@ -68,14 +68,14 @@
 
 ## Future expectation and functionalities
 
-[ ] To allow the esc key to clear all items
-[x] Slow transition effet DOMContentLoaded.
-[ ] To recieve inout & command from computer keyboard
-[ ] Implement welcome / splash screen and close app feature.
-[ ] Add comma number formatter to number values on display
-[x] Add box-shadow to give reality feel
-[ ] Microinteraction to indicate button is pressed.
-[ ] Make calculator installable as web-app on devices.
+- [ ] To allow the esc key to clear all items
+- [x] Slow transition effet DOMContentLoaded.
+- [ ] To recieve inout & command from computer keyboard
+- [ ] Implement welcome / splash screen and close app feature.
+- [ ] Add comma number formatter to number values on display
+- [x] Add box-shadow to give reality feel
+- [ ] Microinteraction to indicate button is pressed.
+- [ ] Make calculator installable as web-app on devices.
 
 ## Links
 

@@ -39,7 +39,7 @@
 - HTML
 - SCSS compiled to CSS
 
-## Adjustments made from[original project](https://#adjustments-made-from-original-project)
+## Adjustments made from [original project](https://www.youtube.com/watch?v=XyVIi6BipR8)
 
 - CSS is compiled from SCSS and not written directly as a CSS file. This saved time and increased understanding how SCSS compiles. My configuration setup for livesass as seen:
 

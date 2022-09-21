@@ -17,17 +17,17 @@
 ## What I Learnt?
 
 1. **Grid Template area:**
-   In coding this lesson, I was able to undrstand the implementation of grid template areas, as this is used in arange the items of the calculator.
+   In implementing this project, I am able to undrstand the grid template areas in CSS, This is used for the layout arrangement of the items in the calculator.
 
 2. **Regex:**
-   In this lesson, I have discovered a powerful new feature, Regex.
+   In this lesson, I discovered the power of Regex.
 
    ```js
    const regex = /(^[*/=])|(\s)/g;
    equation.replace(regex, '');
    ```
 
-3. **The eval() method:** I never realized that this existed in javascript, until coding this project. This particularly is a big eye-opener.
+3. **The eval() method:** I never realized this exists in JavaScript up until when I implemetned this method. This particularly was a big eye-opener for me. Code sample:
 
    ```js
    return (currentValueElem.value = eval(equation));
@@ -39,13 +39,9 @@
 - HTML
 - SCSS compiled to CSS
 
-## Tiny adjustments made from original project
+## Adjustments made from[original project](https://#adjustments-made-from-original-project)
 
-- CSS is compiled from SCSS and not written directly as a CSS file. This saved time and increases strength in understanding how SCSS compiling works and setting up the code extension for the output directory.
-
-- Delete button returns 0 to be displayed if it is the last item deleted.
-
-- If initial value is 0 the delete button does not need to run.
+- CSS is compiled from SCSS and not written directly as a CSS file. This saved time and increased understanding how SCSS compiles. My configuration setup for livesass as seen:
 
 ```json
 {
@@ -60,13 +56,17 @@
 }
 ```
 
+- **Delete button** returns **0** to be displayed if it is the last item deleted.
+
+- If initial value is 0 the **delete button** does not need to run.
+
 > The above code is the workspace setup settings for live sass compiler in scode
 
-## Drawbacks
+## My Drawbacks
 
-- It took me a while to really understand the purpose for implementing the newNumberFlag; I finnaly got to fully understanding it. Thanks to DveGray for an impressive follow through.
+- It took me a while to really understand the purpose for implementing the `newNumberFlag`; I got to understand it later on.
 
-## Future expectation and functionalities
+## Future update on functionalities
 
 - [ ] To allow the esc key to clear all items
 - [x] Slow transition effet DOMContentLoaded.
@@ -82,6 +82,10 @@
 Codebase Repo: [GitHub](https://github.com/mrpaulishaili/calculator-app)
 
 Live URL: [GitHub Pages](https://mrpaulishaili.github.io/calculator-app/dist/)
+
+## Acknowledgement
+
+Thanks to Dave Gray for an impressive follow through.
 
 ## Valuable Resources
 

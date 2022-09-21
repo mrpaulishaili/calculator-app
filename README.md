@@ -40,6 +40,10 @@ Working Illustration
 
 - CSS is compiled from SCSS and not written directly as a CSS file. This saved time and increases strength in understanding how SCSS compiling works and setting up the code extension for the output directory.
 
+- Delete button returns 0 to be displayed if it is the last item deleted.
+
+- If initial value is 0 the delete button does not need to run.
+
 ```json
 {
   "liveSassCompile.settings.formats": [
@@ -56,6 +60,16 @@ Working Illustration
 > The above code is the workspace setup settings for live sass compiler in scode
 
 ## Drawbacks
+
+- It took me a while to really understand the purpose for implementing the newNumberFlag; I finnaly got to fully understanding it. Thanks to DveGray for an impressive follow through.
+
+## Future expectation and functionalities
+
+- To allow the esc key to clear all items
+
+- To recieve inout & command from computer keyboard
+
+- Implement welcome / splash screen and close app feature.
 
 ## Links
 

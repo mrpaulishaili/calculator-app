@@ -12,7 +12,7 @@
 
 ### Working Illustration
 
-![Working Illustration](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/illustration-calculator-app.gif)
+![Working Illustration](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/Illustration-calculator-app.gif)
 
 ## What I Learnt?
 

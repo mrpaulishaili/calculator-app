@@ -3,13 +3,13 @@
 ## Screenshots
 
 Desktop Demo
-![Desktop Demo]()
+![Desktop Demo](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/desktop-view.jpg)
 
 Mobile Demo
-![Mobile Demo]()
+![Mobile Demo](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/mobile-view.jpg)
 
 Working Illustration
-![Working Illustration]()
+![Working Illustration](https://github.com/mrpaulishaili/calculator-app/blob/main/dist/public/media/illustration-calculator.gif)
 
 ## What Learnt
 

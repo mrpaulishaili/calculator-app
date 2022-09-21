@@ -63,15 +63,16 @@ body {
 
 .header {
   grid-area: header;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 
   h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.85rem;
     padding-top: 0.5rem;
-    font-weight: 300;
+    font-weight: 100;
   }
 }
 

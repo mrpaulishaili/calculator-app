@@ -1,19 +1,19 @@
-import { nFormatter } from './numberFormatter.js';
+import { nFormatter } from "./numberFormatter.js";
 
 const initApp = () => {
   /*  
         Query select DOM elements
 
   */
-  const container = document.querySelector('.container'),
-    currentValueElem = document.querySelector('.currentvalue'),
-    previousValueElem = document.querySelector('.previousvalue'),
-    inputButtons = document.querySelectorAll('.number'),
-    clearButtons = document.querySelectorAll('.clear, .clearEntry'),
-    deleteButton = document.querySelector('.delete'),
-    signChangeButton = document.querySelector('.signChange'),
-    operatorButtons = document.querySelectorAll('.operator'),
-    equalsButton = document.querySelector('.equals');
+  const container = document.querySelector(".container"),
+    currentValueElem = document.querySelector(".currentvalue"),
+    previousValueElem = document.querySelector(".previousvalue"),
+    inputButtons = document.querySelectorAll(".number"),
+    clearButtons = document.querySelectorAll(".clear, .clearEntry"),
+    deleteButton = document.querySelector(".delete"),
+    signChangeButton = document.querySelector(".signChange"),
+    operatorButtons = document.querySelectorAll(".operator"),
+    equalsButton = document.querySelector(".equals");
 
   /*    
         Set variables
@@ -29,8 +29,8 @@ const initApp = () => {
   */
   const clearFunction = (event) => {
     currentValueElem.value = 0;
-    if (event.target.classList.contains('clear')) {
-      previousValueElem.textContent = '';
+    if (event.target.classList.contains("clear")) {
+      previousValueElem.textContent = "";
       itemArray = [];
     }
   };
@@ -50,7 +50,7 @@ const initApp = () => {
         Click Event Listeners: INPUT BUTTONS
   */
   inputButtons.forEach((button) => {
-    button.addEventListener('click', (event) => {
+    button.addEventListener("click", (event) => {
       // Get button textContent on click, then save to constant variable:  newInput
       const newInput = event.target.textContent;
 
@@ -78,27 +78,27 @@ const initApp = () => {
         Click Event Listeners: CLEAR BUTTONS 
   */
   clearButtons.forEach((button) => {
-    button.addEventListener('click', clearFunction);
+    button.addEventListener("click", clearFunction);
   });
 
   /*  
          Click Event Listeners: DELETE BUTTON 
   */
-  deleteButton.addEventListener('click', deleteFunction);
+  deleteButton.addEventListener("click", deleteFunction);
 
   /*  
          Click Event Listeners: SignChange BUTTON 
   */
-  signChangeButton.addEventListener('click', signChangeFunction);
+  signChangeButton.addEventListener("click", signChangeFunction);
 
   /*  
          Click Event Listeners: OPERATOR BUTTONS
   */
   operatorButtons.forEach((operatorButton) => {
-    operatorButton.addEventListener('click', (event) => {
+    operatorButton.addEventListener("click", (event) => {
       // equal sign showing
       if (newNumberFlag) {
-        previousValueElem.textContent = '';
+        previousValueElem.textContent = "";
         itemArray = [];
       }
 
@@ -130,9 +130,9 @@ const initApp = () => {
 
         equationArray.push(equationObj);
         const equationString = `
-         ${equationObj['num1']}
-         ${equationObj['op']}
-         ${equationObj['num2']}
+         ${equationObj["num1"]}
+         ${equationObj["op"]}
+         ${equationObj["num2"]}
         `;
 
         const newValue = calculate(equationString, currentValueElem);
@@ -151,7 +151,7 @@ const initApp = () => {
   /*  
          Click Event Listeners: EQUALS BUTTON
   */
-  equalsButton.addEventListener('click', () => {
+  equalsButton.addEventListener("click", () => {
     const currentVal = currentValueElem.value;
     let equationObj;
 
@@ -176,7 +176,7 @@ const initApp = () => {
 
     equationArray.push(equationObj);
 
-    const equationString = `${equationObj['num1']} ${equationObj['op']} ${equationObj['num2']}`;
+    const equationString = `${equationObj["num1"]} ${equationObj["op"]} ${equationObj["num2"]}`;
 
     calculate(equationString, currentValueElem);
 
@@ -192,15 +192,42 @@ const initApp = () => {
   });
 
   setTimeout(() => {
-    container.classList.add('on');
+    container.classList.add("on");
   }, 100);
+
+  // SIDEBAR TOGGLE
+
+  const openSideBarBtn = document.querySelector(".open-sidebar"),
+    closeSideBarBtn = document.querySelector(".close-sidebar"),
+    sideBar = document.querySelector(".sidebar"),
+    toggleSideBar = () => {
+      sideBar.classList.toggle("active");
+
+      // if (!sideBar.classList.contains("active")) {
+      //   document.removeEventListener("click", toggleSideBar);
+      // } else {
+      //   document.addEventListener("click", toggleSideBar);
+      //   console.log(container);
+      // }
+    };
+
+  openSideBarBtn.addEventListener("click", toggleSideBar);
+  closeSideBarBtn.addEventListener("click", toggleSideBar);
+
+  const sideBarButtons = sideBar.querySelectorAll("li");
+
+  for (const button of sideBarButtons) {
+    button.onclick = toggleSideBar;
+  }
+
+  console.log(sideBar);
 };
 
-document.addEventListener('DOMContentLoaded', initApp);
+document.addEventListener("DOMContentLoaded", initApp);
 
 const calculate = (equation, currentValueElem) => {
   const regex = /(^[*/=])|(\s)/g;
-  equation.replace(regex, '');
+  equation.replace(regex, "");
 
   const divByZero = /(\/0)/.test(equation);
 

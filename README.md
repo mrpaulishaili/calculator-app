@@ -38,6 +38,8 @@
 - JavaScript
 - HTML
 - SCSS compiled to CSS
+- Workbox
+- Service Workers to function offline.
 
 ## Adjustments made from [original project](https://www.youtube.com/watch?v=XyVIi6BipR8)
 
@@ -70,7 +72,7 @@
 
 - [ ] To allow the esc key to clear all items
 - [x] Slow transition effet DOMContentLoaded.
-- [ ] To recieve inout & command from computer keyboard
+- [ ] To recieve input & command from computer keyboard
 - [ ] Implement welcome / splash screen and close app feature.
 - [ ] Add comma number formatter to number values on display
 - [x] Add box-shadow to give reality feel

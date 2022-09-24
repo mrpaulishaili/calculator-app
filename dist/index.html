@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta data -->
+    <!-- DEFAULT META TAGS -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FontAwesome Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <!-- OPEN GRAPH META TAGS -->
+    <meta
+      name="description"
+      content="The All-in-One Calculator you need - Developed by Paul Ishaili C."
     />
 
-    <!-- Reset CSS -->
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="./public/css/fontawesome.min.css" />
+
+    <!-- RESET CSS -->
     <link rel="stylesheet" href="./public/css/reset.css" />
 
-    <!-- Link to CSS -->
+    <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="./public/css/style.min.css" />
 
     <style>
@@ -31,6 +31,16 @@
       }
     </style>
 
+    <!-- <script>
+      // Check that service worker are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js');
+        });
+      }
+    </script> -->
+
     <!-- Site Page Title -->
     <title>Calculator App</title>
   </head>
@@ -38,9 +48,19 @@
     <main class="container">
       <!-- Calculator Header -->
       <header class="header">
-        <i class="fa fa-bars"></i>
+        <div class="open-sidebar"><i class="fa fa-bars"></i></div>
         <h1>Calculator</h1>
       </header>
+
+      <aside class="sidebar">
+        <ul>
+          <div class="close-sidebar">
+            <i class="fa fa-times"></i>
+          </div>
+          <li class="active">Standard</li>
+          <li>Binary - Decimal</li>
+        </ul>
+      </aside>
 
       <!-- Calculator display -->
       <section class="display">

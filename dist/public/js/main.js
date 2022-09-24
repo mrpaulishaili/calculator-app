@@ -36,7 +36,7 @@ const initApp = () => {
   };
 
   const deleteFunction = () => {
-    if (currentValueElem.value == 0) return;
+    if (currentValueElem.value === 0) return;
     if (currentValueElem.value.length === 1)
       return (currentValueElem.value = 0);
     currentValueElem.value = currentValueElem.value.slice(0, -1);

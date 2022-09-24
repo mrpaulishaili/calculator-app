@@ -77,7 +77,7 @@
 - [ ] Add comma number formatter to number values on display
 - [x] Add box-shadow to give reality feel
 - [ ] Microinteraction to indicate button is pressed.
-- [ ] Make calculator installable as web-app on devices.
+- [x] Make calculator installable as web-app on devices.
 
 ## Links
 

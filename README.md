@@ -114,4 +114,6 @@ Thanks to Dave Gray for an impressive follow through.
 
 ## Valuable Resources
 
-How to Build a Calculator with Vanilla Javascript | Dave Gray [Link here](https://www.youtube.com/watch?v=XyVIi6BipR8)
+- How to Build a Calculator with Vanilla Javascript: Dave Gray [Link here](https://www.youtube.com/watch?v=XyVIi6BipR8)
+
+- Fix sticky hover state on mobile: CSS Trick. [Link here](https://css-tricks.com/solving-sticky-hover-states-with-media-hover-hover/)

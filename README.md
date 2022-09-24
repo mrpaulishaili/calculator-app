@@ -62,11 +62,23 @@
 
 - If initial value is 0 the **delete button** does not need to run.
 
-> The above code is the workspace setup settings for live sass compiler in scode
+> The above code is the workspace setup settings for live sass compiler in vscode
 
 ## My Drawbacks
 
 - It took me a while to really understand the purpose for implementing the `newNumberFlag`; I got to understand it later on.
+
+## Added Functionalities
+
+- [] Delete button on screen returns 0 as value if last item is deleted
+- [] Calculator slowly support for computer keyboard inputs:
+  - [x] Esc key clear all calcuations and returns display value to zero
+- [] Sidebar Features:
+  - [x] Standard
+  - [] Measurement
+  - [] Currency
+  - [] Binary
+  - [] Hexadecimal
 
 ## Future update on functionalities
 

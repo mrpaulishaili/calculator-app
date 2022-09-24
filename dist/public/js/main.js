@@ -29,10 +29,13 @@ const initApp = () => {
   */
   const clearFunction = (event) => {
     currentValueElem.value = 0;
-    if (event.target.classList.contains('clear')) {
-      previousValueElem.textContent = '';
-      itemArray = [];
-    }
+    if (event.target.classList.contains('clear')) clearAllFunction();
+  };
+
+  const clearAllFunction = () => {
+    currentValueElem.value = 0;
+    previousValueElem.textContent = '';
+    itemArray = [];
   };
 
   const deleteFunction = () => {
@@ -73,6 +76,15 @@ const initApp = () => {
       }
     });
   });
+
+  //  KEYBOARD PRESS
+
+  function keyPress(e) {
+    if (e.key === 'Escape') {
+      clearAllFunction();
+    }
+  }
+  window.addEventListener('keyup', keyPress);
 
   /*  
         Click Event Listeners: CLEAR BUTTONS 

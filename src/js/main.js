@@ -71,6 +71,14 @@ const initApp = () => {
     });
   });
 
+  //  KEYBOARD PRESS
+
+  function keyPress(e) {
+    console.log();
+    if (e.key === 'Escape') clearFunction();
+  }
+  window.addEventListener('keydown', keyPress(e));
+
   /*  
         Click Event Listeners: CLEAR BUTTONS 
   */

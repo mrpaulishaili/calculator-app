@@ -112,6 +112,7 @@ button {
   background-color: whitesmoke;
 
   @media (hover: hover) {
+    background-color: #000;
     &:hover,
     &:active {
       transition: 0.2s background-color ease-in-out;

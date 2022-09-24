@@ -74,11 +74,22 @@
 - [] Calculator slowly support for computer keyboard inputs:
   - [x] Esc key clear all calcuations and returns display value to zero
 - [] Sidebar Features:
+
   - [x] Standard
   - [] Measurement
   - [] Currency
   - [] Binary
   - [] Hexadecimal
+
+- Fixed sticky hover state for mobile with this:
+
+```css
+@media (hover: hover) {
+  &:hover {
+    ...;
+  }
+}
+```
 
 ## Future update on functionalities
 

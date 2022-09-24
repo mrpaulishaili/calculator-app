@@ -113,10 +113,9 @@ button {
   appearance: none;
 
   @media (hover: hover) {
-    &:hover,
-    &:active {
-      // transition: 0.2s background-color ease-in-out;
-      // background-color: rgba(255, 255, 255, 0.2);
+    &:hover {
+      transition: 0.2s background-color ease-in-out;
+      background-color: rgba(255, 255, 255, 0.2);
       cursor: pointer;
     }
   }
